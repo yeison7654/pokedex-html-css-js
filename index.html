@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex
+    </title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="box-pokedex">
+        <div class="box-header"></div>
+        <div class="box-body">
+            <p class="name-pokemon">Name Pokemon</p>
+            <div>
+                <img class="img-pokemon" src="" alt="Aqui va la imagen del pokemon">
+                <ul>
+                    <li><span>Experiencia Base</span> <span class="base_experience" style="color: red;">19</span></li>
+                    <li><span>Peso</span> <span class="weight" style="color: red;">19</span></li>
+                    <li><span>Habilidades</span>
+                        <span class="abilities-1" style="color: red;">19</span> |
+                        <span class="abilities-2" style="color: red;">19</span>
+                    </li>
+                </ul>
+            </div>
+            <audio class="sound-pokemon" src="" controls preload="auto"></audio>
+        </div>
+        <div class="box-footer"></div>
+        <div class="box-form">
+            <form name="form-consult" id="form-consult">
+                <div class="input-text">
+                    <label for="">Busca tu pokemon</label>
+                    <input type="text" name="input_name">
+                </div>
+                <div class="input-button">
+                    <button type="submit" class="button-success" name="btn-consult"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+:root {
+    --color-primary: #DD082F;
+    --color-secondary: #FFCC02;
+    --color-tertiary: #3B020D;
+    --color-danger: #B32A2B;
+    --font-size: 17px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: var(--font-size);
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    background: var(--color-tertiary);
+}
+
+.box-pokedex {
+    background: var(--color-primary);
+    width: 25rem;
+    margin: 4rem auto;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.box-header {}
+
+.box-body {
+    background: white;
+    border: 0.5rem solid gray;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.name-pokemon {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.box-body>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-body>div>ul {
+    list-style: none;
+    width: 60%;
+}
+
+.box-footer {}
+
+.box-form {
+    margin-top: 0.5rem;
+}
+
+.box-form>form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input-text {
+    background: var(--color-secondary);
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+    display: grid;
+    width: 100%;
+}
+
+.input-text>label {
+    font-size: 0.6rem;
+    font-style: oblique;
+    color: #424242;
+}
+
+.input-text>input {
+    border: 0;
+    outline: 0;
+    padding-left: 0.5rem;
+    padding-bottom: 0.1rem;
+    padding-top: 0.1rem;
+    padding-right: 0.3rem;
+    border-radius: 0.1rem;
+}
+
+.input-button {}
+
+.input-button>button {
+    background: var(--color-danger);
+    outline: none;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0.1rem 0.1rem 0.1rem;
+    transition: all 0.9ms;
+}
+
+.input-button>button:hover {
+    background: var(--color-tertiary);
+}
