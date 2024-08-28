@@ -2,7 +2,11 @@
     --color-primary: #DD082F;
     --color-secondary: #FFCC02;
     --color-tertiary: #3B020D;
-    --color-danger: #B32A2B;
+    --color-danger: #972323;
+    --color-info: #519AFB;
+    --color-info-2: #2e5c98;
+    --color-success: #2FF901;
+    --color-success-2: #23a805;
     --font-size: 17px;
 }
 
@@ -16,6 +20,54 @@
 
 body {
     background: var(--color-tertiary);
+}
+
+.btn {
+    border: 0;
+    outline: 0;
+    border-radius: 100%;
+    padding: 0;
+    width: 3rem;
+    height: 3rem;
+}
+
+.btn-power {
+    background: var(--color-tertiary);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    transition: all 0.999ms;
+}
+
+.btn-power:hover {
+    background: var(--color-danger);
+    box-shadow: 0.1rem 0.1rem 0.4rem black;
+}
+
+.btn-search {
+    background: var(--color-info-2);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    transition: all 0.999ms;
+}
+
+.btn-search:hover {
+    background: var(--color-info);
+    box-shadow: 0.1rem 0.1rem 0.4rem black;
+}
+
+.btn-controls {
+    background: var(--color-success-2);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    transition: all 0.999ms;
+}
+
+.btn-controls:hover {
+    background: var(--color-success);
+    box-shadow: 0.1rem 0.1rem 0.4rem black;
 }
 
 .box-pokedex {
@@ -35,6 +87,7 @@ body {
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 .name-pokemon {
@@ -54,7 +107,12 @@ body {
     width: 60%;
 }
 
-.box-footer {}
+.box-footer {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
 
 .box-form {
     margin-top: 0.5rem;
@@ -93,19 +151,3 @@ body {
 }
 
 .input-button {}
-
-.input-button>button {
-    background: var(--color-danger);
-    outline: none;
-    border: none;
-    height: 3rem;
-    width: 3rem;
-    border-radius: 100%;
-    cursor: pointer;
-    box-shadow: 0.1rem 0.1rem 0.1rem;
-    transition: all 0.9ms;
-}
-
-.input-button>button:hover {
-    background: var(--color-tertiary);
-}
