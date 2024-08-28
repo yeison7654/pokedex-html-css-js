@@ -22,6 +22,10 @@ body {
     background: var(--color-tertiary);
 }
 
+.hidden {
+    display: none;
+}
+
 .btn {
     border: 0;
     outline: 0;
@@ -86,7 +90,6 @@ body {
     border: 0.5rem solid gray;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
-    padding: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -99,6 +102,7 @@ body {
 
 .view-1 {
     width: 100%;
+    padding: 1rem;
 }
 
 .view-1>div {
@@ -114,17 +118,23 @@ body {
     height: 10rem;
     width: 10rem;
 }
-.view-1>div>ul{
+
+.view-1>div>ul {
     width: 100%;
     padding: 0 1rem;
     list-style: none;
 }
-.view-1>div>ul li{
+
+.view-1>div>ul li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.2rem;
     border-bottom: 0.1rem black solid;
+}
+.view-2{
+    height: 19rem;
+    background: gray;
 }
 
 .box-footer {
