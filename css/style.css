@@ -97,14 +97,34 @@ body {
     text-transform: uppercase;
 }
 
-.box-body>div {
-    display: flex;
-    justify-content: space-between;
+.view-1 {
+    width: 100%;
 }
 
-.box-body>div>ul {
+.view-1>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.view-1>div>img {
+    height: 10rem;
+    width: 10rem;
+}
+.view-1>div>ul{
+    width: 100%;
+    padding: 0 1rem;
     list-style: none;
-    width: 60%;
+}
+.view-1>div>ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+    border-bottom: 0.1rem black solid;
 }
 
 .box-footer {
