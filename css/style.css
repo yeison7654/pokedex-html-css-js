@@ -16,6 +16,7 @@
     font-size: var(--font-size);
     box-sizing: border-box;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: all 1s ease-in-out;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .btn {
@@ -142,6 +143,13 @@ body {
     background: #575757;
 }
 
+.view-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .box-footer {
     margin-bottom: 1rem;
     display: flex;
@@ -186,3 +194,24 @@ body {
 }
 
 .input-button {}
+
+/*Load spinner*/
+.spinner {
+    width: 5rem;
+    height: 5rem;
+    border: 1rem solid var(--color-tertiary);
+    border-top: 1rem solid var(--color-primary);
+    border-radius: 50%;
+    animation: Girar 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes Girar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

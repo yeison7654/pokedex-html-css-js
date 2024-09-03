@@ -27,14 +27,24 @@ function onOff() {
             //accion prender
             document.querySelector(".input-name").disabled = false;
             viewsHidden();
-            views[0].classList.toggle("hidden")
-            searchPokemon(nRandom());
+            views[2].classList.toggle("hidden");
+            setTimeout(() => {
+                views[0].classList.toggle("hidden");
+                views[2].classList.toggle("hidden");
+            }, 1500);
+            document.querySelector(".text-load").innerHTML = "Iniciado equipo";
+           // searchPokemon(nRandom());
         } else {
             //accion apagar
             form.reset();
             document.querySelector(".input-name").disabled = true;
             viewsHidden();
-            views[1].classList.toggle("hidden")
+            views[2].classList.toggle("hidden");
+            setTimeout(() => {
+                views[1].classList.toggle("hidden");
+                views[2].classList.toggle("hidden");
+            }, 1500);
+            document.querySelector(".text-load").innerHTML = "Apagando equipo";
         }
 
     })
@@ -71,9 +81,13 @@ function searchPokemon(params) {
     let Url = "https://pokeapi.co/api/v2/pokemon/";
     try {
         let urlEnd = Url + params;
+        views[2].classList.toggle("hidden")
+        document.querySelector(".text-load").innerHTML = "Realizando la busqueda";
+        views[0].classList.toggle("hidden")
         fetch(urlEnd)
             .then((response) => response.json())
             .then(data => {
+
                 document.querySelector(".name-pokemon").innerHTML = data.name
                 document.querySelector(".img-pokemon").src = data.sprites.front_default
                 document.querySelector(".abilities-1").innerHTML = data.abilities[0].ability.name
@@ -81,6 +95,10 @@ function searchPokemon(params) {
                 document.querySelector(".sound-pokemon").src = data.cries.latest
                 document.querySelector(".base_experience").innerHTML = data.base_experience
                 document.querySelector(".weight").innerHTML = data.weight + " Kg"
+                setTimeout(() => {
+                    views[2].classList.toggle("hidden")
+                    views[0].classList.toggle("hidden")
+                }, 500);
             })
     } catch (error) {
         console.log("Se encontro un error inesperado : " + error)
