@@ -28,7 +28,7 @@ function onOff() {
             document.querySelector(".input-name").disabled = false;
             viewsHidden();
             views[0].classList.toggle("hidden")
-            searchPokemon(1);
+            searchPokemon(nRandom());
         } else {
             //accion apagar
             form.reset();
