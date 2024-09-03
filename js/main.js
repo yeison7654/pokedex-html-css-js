@@ -28,6 +28,7 @@ function onOff() {
             document.querySelector(".input-name").disabled = false;
             viewsHidden();
             views[0].classList.toggle("hidden")
+            searchPokemon(1);
         } else {
             //accion apagar
             form.reset();
@@ -84,4 +85,12 @@ function searchPokemon(params) {
     } catch (error) {
         console.log("Se encontro un error inesperado : " + error)
     }
+}
+
+function nRandom(nMin = 0, nMax = 100) {
+    let nRandom = Math.random();//geneara numero aleatorios entre 0 - 1
+    let nmin = nMin;
+    let nmax = nMax;
+    let nInt = Math.floor(nRandom * (nmax - nmin)) + nmin; //Math.floor Redondea el numero decimal
+    return nInt;
 }
