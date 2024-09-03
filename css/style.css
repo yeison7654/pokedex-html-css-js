@@ -100,6 +100,10 @@ body {
     text-transform: uppercase;
 }
 
+.height-23 {
+    height: 23rem;
+}
+
 .view-1 {
     width: 100%;
     padding: 1rem;
@@ -132,8 +136,8 @@ body {
     margin-bottom: 0.2rem;
     border-bottom: 0.1rem black solid;
 }
-.view-2{
-    height: 19rem;
+
+.view-2 {
     background: gray;
 }
 
