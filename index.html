@@ -14,7 +14,7 @@
     <div class="box-pokedex">
         <div class="box-header"></div>
         <div class="box-body">
-            <div class="height-23 view-1 ">
+            <div class="height-23 view-1 hidden">
                 <p class="name-pokemon">Name Pokemon</p>
                 <div>
                     <img class="img-pokemon" src="" alt="Aqui va la imagen del pokemon">
@@ -32,29 +32,36 @@
                 </div>
                 <audio class="sound-pokemon" src="" controls preload="auto" style="width: 100%;"></audio>
             </div>
-            <div class="height-23 view-2 hidden">
+            <div class="height-23 view-2 ">
 
             </div>
             <div class="height-23 view-3 hidden">
                 <p>Encendiendo</p>
+            </div>
+            <div class="height-23 view-4 hidden">
+            </div>
+            <div class="height-23 view-5 hidden">
+            </div>
+            <div class="height-23 view-6 hidden">
             </div>
         </div>
         <div class="box-footer">
             <button class="btn btn-power">
                 <i class="fa-solid fa-power-off"></i>
             </button>
-            <button class="btn btn-controls">
+            <button class="btn btn-controls back">
                 <i class="fa-solid fa-backward"></i>
             </button>
-            <button class="btn btn-controls">
+            <button class="btn btn-controls next">
                 <i class="fa-solid fa-forward"></i>
             </button>
         </div>
         <div class="box-form">
             <form name="form-consult" id="form-consult">
                 <div class="input-text">
-                    <label for="">Busca tu pokemon</label>
-                    <input type="text" name="input_name" required placeholder="Por id o nombre">
+                    <label for="input-name">Busca tu pokemon</label>
+                    <input type="text" class="input-name" id="input-name" disabled autofocus name="input_name" required
+                        placeholder="Por id o nombre">
                 </div>
                 <div class="input-button">
                     <button type="submit" class="btn btn-search" name="btn-consult">
