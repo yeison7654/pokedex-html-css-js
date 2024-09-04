@@ -7,6 +7,7 @@
     --color-info-2: #2e5c98;
     --color-success: #2FF901;
     --color-success-2: #23a805;
+    --color-gray: gray;
     --font-size: 17px;
 }
 
@@ -27,6 +28,7 @@ body {
     display: none !important;
 }
 
+/*Seccion btn*/
 .btn {
     border: 0;
     outline: 0;
@@ -75,6 +77,10 @@ body {
     box-shadow: 0.1rem 0.1rem 0.4rem black;
 }
 
+.btn-gray {
+    background: var(--color-gray);
+}
+/*fin seccion btn*/
 .box-pokedex {
     background: var(--color-primary);
     width: 25rem;
